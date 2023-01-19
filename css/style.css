@@ -1,0 +1,26 @@
+/* Configurações Gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+* {
+    font-family: 'Sofia Sans', sans-serif;
+    background-color: #202124;
+    color: white;
+}
+
+.conteudo {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.site-header__icon {
+    border-radius: 50%;
+    width: 20%;
+}
