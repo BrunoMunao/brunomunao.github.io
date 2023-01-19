@@ -1,26 +1,76 @@
 /* Configurações Gerais */
 
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sofia+Sans&display=swap");
 
 * {
-    font-family: 'Sofia Sans', sans-serif;
-    background-color: #202124;
-    color: white;
+  font-family: "Sofia Sans", sans-serif;
+  text-decoration: none;
 }
 
-.conteudo {
-    margin: 0 auto;
-    max-width: 940px;
+div {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 1rem;
 }
 
 /* Header */
-
-header {
-    text-align: center;
-    margin-top: 1rem;
+.header-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: rgb(255, 136, 0);
 }
 
-.site-header__icon {
-    border-radius: 50%;
-    width: 20%;
+.header-icon {
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5rem;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu__item {
+  margin-left: 1.3rem;
+  list-style: none;
+  text-transform: lowercase;
+}
+
+.header-menu__item a {
+  color: rgb(255, 136, 0);
+}
+
+/* Main */
+.main-conteudo {
+  height: 100vmin;
+}
+
+/* Main sobre */
+.main-sobre {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.main-sobre__img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.main-sobre__descricao h2 {
+  font-weight: 300;
+}
+
+/* Main habilidades */
+.main-habilidades h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.main-habilidades ul {
+}
+
+.main-habilidades li {
+  font-size: 1.3rem;
+  margin: 1rem 0;
 }
