@@ -1,10 +1,14 @@
 /* Configurações Gerais */
 
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sofia+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap");
 * {
-  font-family: "Sofia Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   text-decoration: none;
+}
+
+body {
+  background-color: #e6edf0;
 }
 
 div {
@@ -19,12 +23,11 @@ div {
   align-items: center;
   justify-content: space-between;
   font-size: 1.4rem;
-  color: rgb(255, 136, 0);
+  color: #4a6570;
 }
 
-.header-icon {
-  font-family: "Indie Flower", cursive;
-  font-size: 2.5rem;
+.header-logo {
+  width: 200px;
 }
 
 .header-menu {
@@ -35,26 +38,27 @@ div {
   margin-left: 1.3rem;
   list-style: none;
   text-transform: lowercase;
+  font-size: 1.5rem;
 }
 
 .header-menu__item a {
-  color: rgb(255, 136, 0);
+  color: #4a6570;
 }
 
 /* Main */
-.main-conteudo {
-  height: 100vmin;
-}
 
 /* Main sobre */
 .main-sobre {
-  text-align: center;
+  display: flex;
   font-size: 1rem;
 }
 
 .main-sobre__img {
-  border-radius: 50%;
-  width: 30%;
+  height: 100%;
+  margin-left: 2rem;
+  box-shadow: rgba(74, 101, 112, 0.4) 5px 5px, rgba(74, 101, 112, 0.3) 10px 10px,
+    rgba(74, 101, 112, 0.2) 15px 15px, rgba(74, 101, 112, 0.1) 20px 20px,
+    rgba(74, 101, 112, 0.05) 25px 25px;
 }
 
 .main-sobre__descricao h2 {
@@ -67,10 +71,49 @@ div {
   font-size: 2rem;
 }
 
-.main-habilidades ul {
-}
-
-.main-habilidades li {
+.main-habilidades h4 {
   font-size: 1.3rem;
   margin: 1rem 0;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+.habilidades-nomes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.habilidades-nomes h4 {
+  padding: 0.8rem;
+}
+
+/* Media */
+
+@media (max-width: 940px) {
+  /* Header */
+  .header-conteudo {
+    margin-bottom: -100px;
+    margin-top: -50px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-logo {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  /* Main Mobile */
+  .main-sobre {
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+  .main-sobre__img {
+    margin: 0 auto;
+    width: 60%;
+  }
 }

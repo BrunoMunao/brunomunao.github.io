@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Bruno de Avila</title>
+    <title>aviladebruno</title>
   </head>
   <body>
     <header>
       <div class="header-conteudo">
-        <a class="header-icon">adb</a>
+        <img src="images/logo.png" alt="Logo do Site" class="header-logo" />
         <ul class="header-menu">
           <li class="header-menu__item"><a href="#sobre">Sobre</a></li>
           <li class="header-menu__item">
@@ -32,6 +40,17 @@
               Cientista da Computação formado pela Universidade de Caxias do Sul
               (UCS)
             </h2>
+            <p>
+              Bacharel em Ciência da Computação pela Universidade de Caxias do
+              Sul, atuo como técnico de informática no laboratório de
+              informática do bloco T da Universidade de Caxias do Sul.
+            </p>
+            <p>
+              Atualmente estou estudando diversos cursos na plataforma Alura
+              para me aprofundar no desenvolvimento Fullstack. No momento estou
+              com ênfase no Front-end, estudando tecnologias como TypeScript e
+              React.
+            </p>
           </div>
           <img
             class="main-sobre__img"
@@ -40,14 +59,15 @@
           />
         </div>
       </div>
-      <div class="main-conteudo">
-        <div id="habilidades" class="main-habilidades">
-          <h2>Habilidades</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
+      <div id="habilidades" class="main-habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades-nomes">
+          <h4><i class="fa-brands fa-html5"></i>HTML</h4>
+          <h4><i class="fa-brands fa-css3-alt"></i>CSS</h4>
+          <h4><i class="fa-brands fa-js"></i>JavaScript</h4>
+          <h4><i class="fa-brands fa-react"></i>React</h4>
+          <h4><i class="fa-brands fa-python"></i>Python</h4>
+          <h4><i class="fa-brands fa-java"></i>Java</h4>
         </div>
       </div>
     </main>
