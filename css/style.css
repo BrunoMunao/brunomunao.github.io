@@ -1,7 +1,7 @@
 /* Configurações Gerais */
 
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sofia+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&family=Teko:wght@300&display=swap");
+
 * {
   font-family: "Public Sans", sans-serif;
   text-decoration: none;
@@ -11,10 +11,21 @@ body {
   background-color: #e6edf0;
 }
 
-div {
+div,
+section {
   margin: 0 auto;
   max-width: 940px;
   padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Teko", sans-serif;
+}
+
+p {
+  text-align: justify;
 }
 
 /* Header */
@@ -55,6 +66,7 @@ div {
 
 .main-sobre__img {
   height: 100%;
+  width: 80%;
   margin-left: 2rem;
   box-shadow: rgba(74, 101, 112, 0.4) 5px 5px, rgba(74, 101, 112, 0.3) 10px 10px,
     rgba(74, 101, 112, 0.2) 15px 15px, rgba(74, 101, 112, 0.1) 20px 20px,
@@ -65,13 +77,14 @@ div {
   font-weight: 300;
 }
 
-/* Main habilidades */
-.main-habilidades h2 {
+/* Main listagem */
+.main-listagem h2 {
   text-align: center;
   font-size: 2rem;
 }
 
-.main-habilidades h4 {
+.main-listagem h4,
+a {
   font-size: 1.3rem;
   margin: 1rem 0;
 }
@@ -80,15 +93,28 @@ i {
   margin-right: 1rem;
 }
 
-.habilidades-nomes {
+.listagem-nomes {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.habilidades-nomes h4 {
+.listagem-nomes h4,
+a {
   padding: 0.8rem;
+}
+
+/* Sociais */
+.sociais a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sociais a:hover {
+  color: #4a6570;
+  transition: 1s;
 }
 
 /* Media */
@@ -114,6 +140,11 @@ i {
   }
   .main-sobre__img {
     margin: 0 auto;
+    margin-top: 1rem;
     width: 60%;
+  }
+  .listagem-nomes h4,
+  a {
+    font-size: 1rem;
   }
 }
