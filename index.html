@@ -56,12 +56,10 @@
                             <a href="#projects" class="nav__link">Projects</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                            <a class="nav__link" id="moon"
+                                ><i class="bx bxs-moon"></i
+                            ></a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" id="moon"><i class='bx bxs-moon'></i></a>
-                        </li>
-
                     </ul>
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
@@ -80,7 +78,9 @@
                         <span class="home__title-color">Bruno</span
                         ><br />Fullstack Developer
                     </h1>
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="mailto:aviladebruno@gmail.com" class="button"
+                        >Contact</a
+                    >
                     <div class="home__social">
                         <a
                             href="https://github.com/in/aviladebruno"
@@ -113,10 +113,38 @@
                     <div>
                         <h2 class="about__subtitle">I'am Bruno</h2>
                         <p class="about__text">
-                            Bachelor in Computer Science from the University of
-                            Caxias do Sul, I work as a computer technician in
-                            the computer lab of the T sector of the University
-                            of Caxias do Sul.
+                            As a graduate of the University of Caxias do Sul
+                            with a Bachelor's degree in Computer Science, I have
+                            a strong foundation in computer programming,
+                            algorithms, data structures, and other key concepts
+                            in the field. My academic background has prepared me
+                            to approach complex problems in a logical,
+                            analytical way and to leverage technology to create
+                            innovative solutions.
+                        </p>
+                        <p class="about__text">
+                            Currently, I work as a computer technician in the
+                            computer lab of the T sector at the University of
+                            Caxias do Sul. In this role, I utilize my technical
+                            expertise to provide support for students, faculty,
+                            and staff in utilizing the university's computer
+                            systems and applications. I am responsible for
+                            maintaining and troubleshooting a variety of
+                            hardware and software components, including
+                            printers, scanners, operating systems, and
+                            productivity software. Additionally, I work to
+                            ensure that the lab's computer resources are
+                            up-to-date, secure, and functional.
+                        </p>
+                        <p class="about__text">
+                            Throughout my academic and professional career, I
+                            have gained a reputation for my strong work ethic,
+                            attention to detail, and commitment to delivering
+                            high-quality results. I am passionate about using
+                            technology to improve efficiency and streamline
+                            processes, and I am always seeking out opportunities
+                            to learn new skills and stay up-to-date with the
+                            latest developments in the field.
                         </p>
                     </div>
                 </div>
@@ -127,10 +155,34 @@
                 <div class="skills__container d-flex">
                     <div>
                         <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills_text">
-                            Learning every day with focus in become a Fullstack
-                            Developer. Using HTML, CSS, JavaScript and React for
-                            the Front-end part and C# and .NET for the Back-end!
+                        <p class="skills__text">
+                            As someone who is dedicated to pursuing a career as
+                            a Fullstack Developer, I am constantly seeking out
+                            new opportunities to learn and grow my skillset. I
+                            am deeply passionate about programming and am always
+                            eager to learn about the latest tools and
+                            technologies in the field.
+                        </p>
+                        <p class="skills__text">
+                            Currently, I am focused on developing my skills in
+                            Front-end development using HTML, CSS, JavaScript,
+                            and React. These tools are essential for building
+                            engaging, interactive web applications that provide
+                            a great user experience. I am committed to staying
+                            up-to-date with the latest developments in these
+                            technologies and am constantly looking for ways to
+                            improve my proficiency in each of them.
+                        </p>
+                        <p class="skills__text">
+                            In addition to my Front-end development skills, I am
+                            also highly proficient in Back-end development using
+                            C# and .NET. These tools are essential for building
+                            robust, scalable web applications that can handle
+                            complex data processing and storage requirements. I
+                            have extensive experience working with these
+                            technologies and am confident in my ability to
+                            leverage them to build high-quality web
+                            applications.
                         </p>
                         <div class="skills__data">
                             <div class="skills__names">
@@ -162,7 +214,38 @@
                             </div>
                             <div class="skills__bar skills__js"></div>
                         </div>
-
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-react skills__icon"></i>
+                                <span class="skills__name">React</span>
+                            </div>
+                            <div class="skills__percentage">
+                                <span class="skills__percentage">40%</span>
+                            </div>
+                            <div class="skills__bar skills__react"></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i
+                                    class="bx bxl-visual-studio skills__icon"
+                                ></i>
+                                <span class="skills__name">C# and .NET</span>
+                            </div>
+                            <div class="skills__percentage">
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                            <div class="skills__bar skills__csharp"></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-git skills__icon"></i>
+                                <span class="skills__name">Git</span>
+                            </div>
+                            <div class="skills__percentage">
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__git"></div>
+                        </div>
                         <div>
                             <img
                                 src="https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -177,39 +260,16 @@
             <section class="project section hidden" id="projects">
                 <h2 class="section-title">Projects</h2>
                 <div class="project__container d-flex">
-                    <a href="" class="project__img">
-                        <img src="assets/img/work1.jpg" alt="" />
+                    <h2 class="project__title">organo MapleStory</h2>
+                    <a
+                        href="https://maplestory-organo.vercel.app/"
+                        class="project__img"
+                    >
+                        <img
+                            src="https://maplestory-organo.vercel.app/imagens/banner.png"
+                            alt=""
+                        />
                     </a>
-                </div>
-            </section>
-            <!-- Contact -->
-            <section class="contact section hidden" id="contact">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact__container d-flex">
-                    <form action="" class="contact__form">
-                        <input
-                            type="text"
-                            placeholder="Name"
-                            class="contact__input"
-                        />
-                        <input
-                            type="mail"
-                            placeholder="Email"
-                            class="contact__input"
-                        />
-                        <textarea
-                            name=""
-                            id=""
-                            cols="0"
-                            rows="10"
-                            class="contact__input"
-                        ></textarea>
-                        <input
-                            type="button"
-                            value="Send"
-                            class="contact__button button"
-                        />
-                    </form>
                 </div>
             </section>
         </main>
