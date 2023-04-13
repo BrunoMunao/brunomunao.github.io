@@ -8,11 +8,18 @@
 }
 
 /* Color variables */
-
 :root {
     --first-color: #293883;
-    --second-color: #000;
+    --second-color: #151515;
     --bg-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode {
+    --first-color: #293883;
+    --second-color: #fff;
+    --bg-color: #151515;
+    --shadow-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Fonte */
@@ -262,7 +269,7 @@ img {
 }
 
 .button:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 36px var(--shadow-color);
 }
 
 /* About */
@@ -308,7 +315,7 @@ img {
     padding: 0.5rem 1rem;
     margin: var(--mb-4) 0;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 25px rgba(49, 37, 14, 0.15);
+    box-shadow: 0 4px 25px var(--shadow-color);
 }
 
 .skills__icon {
@@ -350,7 +357,7 @@ img {
 
 /* Projects */
 .project__img {
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    box-shadow: 0px 4px 25px var(--shadow-color);
     border-radius: 0.5rem;
     overflow: hidden;
 }
@@ -380,6 +387,8 @@ img {
     border: 1.5px solid var(--second-color);
     outline: none;
     margin-bottom: var(--mb-4);
+    background-color: var(--bg-color);
+    color: var(--second-color);
 }
 
 .contact__button {
@@ -394,8 +403,8 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--second-color);
-    color: #fff;
+    background-color: var(--first-color);
+    color: var(--bg-color);
     text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
@@ -412,7 +421,7 @@ img {
 
 .footer__icon {
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--bg-color);
     margin: 0 var(--mb-2);
 }
 
@@ -515,5 +524,25 @@ img {
     }
     .home__img {
         width: 450px;
+    }
+}
+
+/* Scroll animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
     }
 }
